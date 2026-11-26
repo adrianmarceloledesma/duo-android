@@ -2,7 +2,7 @@
 
 Duo is an Android app for managing personal and shared finances in one place. Its interface is in Spanish.
 
-I created Duo because I wanted to keep track of my personal finances while also sharing expenses with my partner, Mel. I didn't want to enter a shared expense like a supermarket trip twice: once in my personal records and again in our shared account. With Duo, I can record it once and choose to share it, keeping both views connected.
+Duo makes it possible to record an expense once and choose whether to share it, avoiding duplicate entries while keeping personal and shared finances connected.
 
 ## Screenshots
 
