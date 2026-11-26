@@ -18,3 +18,16 @@ I created Duo because I wanted to keep track of my personal finances while also 
 ## Technology
 
 React Native, Expo, TypeScript, AsyncStorage and Supabase.
+
+## Project Structure
+
+```text
+duo-android/
+├── App.tsx          # Main app interface
+├── src/             # Components, finance logic and data services
+├── assets/          # App images and other assets
+├── screenshots/     # App screenshots
+├── scripts/         # Local checks
+├── supabase/        # Database migrations, functions and tests
+└── package.json     # Dependencies and scripts
+```
