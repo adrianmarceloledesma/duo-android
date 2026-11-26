@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Duo Demo",
+    "slug": "duo-android-demo",
+    "version": "0.1.9",
+    "icon": "./assets/duo-indira-v4.png",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "scheme": "com.duo.publicdemo",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-sharing",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#176484",
+          "defaultChannel": "duo-deudas-pagos"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Duo necesita acceder a la foto que elijas como portada.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.duo.publicdemo",
+      "versionCode": 10
+    }
+  }
+}

@@ -1,0 +1,2 @@
+[functions.receipt-cleanup]
+verify_jwt = false

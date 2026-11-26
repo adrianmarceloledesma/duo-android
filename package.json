@@ -1,0 +1,52 @@
+{
+  "name": "duo-mobile",
+  "version": "0.1.9",
+  "private": true,
+  "main": "expo/AppEntry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "android:apk": "npx eas-cli build --platform android --profile preview",
+    "typecheck": "tsc --noEmit",
+    "test:receipts": "node scripts/test-receipts.mjs",
+    "test:search": "node scripts/test-expense-search.mjs",
+    "test:order": "node scripts/test-movement-order.mjs",
+    "test:interest": "node scripts/test-personal-interest.mjs",
+    "test:swipe": "node scripts/test-swipe-pages.mjs",
+    "test:cash-interest": "node scripts/test-cash-interest.mjs"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~58.0.17",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-community/datetimepicker": "9.2.1",
+    "@supabase/supabase-js": "^2.107.0",
+    "base64-js": "^1.5.1",
+    "expo": "~58.0.16",
+    "expo-crypto": "~58.0.8",
+    "expo-document-picker": "~58.0.5",
+    "expo-file-system": "~58.0.13",
+    "expo-image-manipulator": "~58.0.16",
+    "expo-image-picker": "~58.0.10",
+    "expo-notifications": "~58.1.9",
+    "expo-sharing": "~58.0.23",
+    "expo-status-bar": "~58.0.3",
+    "expo-updates": "~58.0.22",
+    "expo-web-browser": "~58.0.8",
+    "fast-text-encoding": "^1.0.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-keyboard-controller": "1.22.7",
+    "react-native-reanimated": "4.7.1",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-url-polyfill": "^3.0.0",
+    "react-native-web": "^0.21.4",
+    "react-native-worklets": "0.13.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@types/react": "~19.3.0",
+    "@types/react-dom": "~19.3.0",
+    "typescript": "~6.0.3"
+  }
+}
