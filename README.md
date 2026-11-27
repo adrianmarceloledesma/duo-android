@@ -22,7 +22,7 @@ Personal records are private to their owner. Shared expenses, savings and receip
 
 ## Technology
 
-React Native, Expo, TypeScript, AsyncStorage and Supabase.
+React Native, Expo, TypeScript, AsyncStorage, Supabase and Firebase Cloud Messaging (notifications).
 
 ## Project Structure
 
