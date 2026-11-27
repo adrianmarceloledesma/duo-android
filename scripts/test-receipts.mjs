@@ -175,7 +175,7 @@ try {
     }
     const sql = (await readFile(path.join(root, 'supabase/migrations', name), 'utf8')).replace(/create extension if not exists pg_net with schema extensions;/g, '');
     await db.exec(sql);
-    if (name === '20261119000100_duo_personal_savings_interest.sql' || name === '20261119000200_duo_shared_savings_interest.sql' || name === '20261123000200_duo_monthly_cash_interest.sql') await db.exec(sql);
+    if (name === '20261119000100_duo_personal_savings_interest.sql' || name === '20261119000200_duo_shared_savings_interest.sql' || name === '20261123000200_duo_monthly_cash_interest.sql' || name === '20261126000100_duo_public_google_registration.sql') await db.exec(sql);
   }
   for (const name of (await readdir(path.join(root, 'supabase/tests'))).filter(name => name.endsWith('.sql')).sort()) {
     try { await db.exec(await readFile(path.join(root, 'supabase/tests', name), 'utf8')); }
