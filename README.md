@@ -4,6 +4,8 @@ Duo is an Android app for managing personal and shared finances in one place. It
 
 Duo makes it possible to record an expense once and choose whether to share it, avoiding duplicate entries while keeping personal and shared finances connected.
 
+[Download APK for Android](https://github.com/adrianmarceloledesma/duo-android/releases/download/v0.1.9/duov1.8.apk)
+
 ## Screenshots
 
 <img src="screenshots/01-gastos.png" alt="Expenses" width="220" /> <img src="screenshots/02-gastos-compartidos.png" alt="Shared finances" width="220" /> <img src="screenshots/03-vencimientos.png" alt="Due dates" width="220" />
