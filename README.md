@@ -35,16 +35,6 @@ duo-android/
 └── package.json     # Dependencies and scripts
 ```
 
-## Development setup
-
-1. Install dependencies with `npm ci` and copy `.env.example` to `.env`. Use your own Supabase project URL and publishable key. Keep secrets and `google-services.json` outside Git.
-2. Apply the SQL files in `supabase/migrations/` in chronological order to your own Supabase project. The [public Google registration migration](supabase/migrations/20261126000100_duo_public_google_registration.sql) removes the initial per-email signup allowlist while continuing to reject other signup providers and anonymous registrations.
-3. Enable Google and **Allow new users to sign up** in Supabase Authentication. Configure the **Before User Created** hook to call `public.duo_before_user_created`.
-4. Configure Google OAuth with only the basic identity scopes: `openid`, `userinfo.email` and `userinfo.profile`. The Google client's redirect URI is the callback shown by Supabase. Add `com.duo.publicdemo://auth/callback` to Supabase's allowed redirect URLs for the public demo configuration in this repository.
-5. Start development with `npm start`. Each person creates their own profile; one generates an invitation code and the other accepts it. Invitations expire after 24 hours and can be used once.
-
-Applying changes to GitHub does not configure a Supabase project automatically. Existing installations retain their users and records when the signup migration is applied.
-
 ## Checks
 
 ```sh
