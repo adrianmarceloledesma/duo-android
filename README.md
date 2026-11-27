@@ -12,6 +12,7 @@ Duo makes it possible to record an expense once and choose whether to share it, 
 
 ## Features
 
+- Sign in with Google and link accounts using an invitation code.
 - Record personal and shared expenses, income, transfers and debts.
 - Follow due dates, savings and financial summaries in Argentine pesos and US dollars.
 
