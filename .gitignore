@@ -13,3 +13,5 @@ google-services.json
 *.orig.*
 .env*
 !.env.example
+
+/personal para explicar el proyecto/
