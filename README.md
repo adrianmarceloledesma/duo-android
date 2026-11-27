@@ -37,11 +37,3 @@ duo-android/
 └── package.json     # Dependencies and scripts
 ```
 
-## Checks
-
-```sh
-npm run typecheck
-npm run test:receipts
-```
-
-The database checks run against isolated PGlite data and include [Google signup authorization](supabase/tests/duo_public_google_registration.sql) and [privacy across two independent couples](supabase/tests/duo_multiple_couples_privacy.sql), covering personal records, shared balances, due dates, interest settings, receipt storage, invitation reuse and notification recipients.
